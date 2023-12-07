@@ -9,12 +9,12 @@ body {
 
 ::-webkit-scrollbar {
     width: 0;
-  }
+}
 
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: none;
-  }
-  
+}
+
 
 
 .form-input._error {
@@ -22,7 +22,7 @@ body {
 }
 
 .header-nav {
-    padding: 20px 0;
+    padding: 20px 0 40px 0;
     justify-content: center;
     display: flex;
     background-color: #FFFFFF;
@@ -53,11 +53,11 @@ body {
 }
 
 .logo-min img {
-    width: 370px;
+    width: 300px;
 }
 
 
-.head-content{
+.head-content {
 
     color: black;
     position: relative;
@@ -75,7 +75,7 @@ body {
     line-height: 120%;
     display: flex;
     flex-direction: column;
-    margin: 155px 0;
+    margin: 60px 0;
 }
 
 
@@ -133,11 +133,6 @@ body {
     width: 800px;
     border-radius: 10px;
     overflow: hidden;
-}
-
-.swiper {
-    /*width: 800px;*/
-    /*height: 562px;*/
 }
 
 .slider-item img {
@@ -198,7 +193,7 @@ body {
     color: #ECECEC;
     border-radius: 20px;
     margin: 50px 15px 15px 15px;
-    position: relative; /* Добавляем позиционирование */
+    position: relative;
 
 
 }
@@ -222,8 +217,8 @@ body {
     box-shadow: 0 0 10px rgba(57, 57, 57, 0.3);
 
     transition: .5s ease;
-    opacity: 0; /* Устанавливаем начальную прозрачность 0 (скрыто) */
-    position: absolute; /* Добавляем позиционирование */
+    opacity: 0;
+    position: absolute;
     top: 0;
     left: 0;
     justify-content: flex-end;
@@ -234,14 +229,13 @@ body {
     display: flex;
 
     align-items: center;
-    pointer-events: none; /* Исключаем взаимодействие с содержимым */
+    pointer-events: none;
 }
 
 .info-text {
     line-height: 180%;
     border-radius: 20px 20px 0 0;
     background: rgba(33, 122, 123, 0.90);
-    /*width: 361px;*/
     height: auto;
     font-size: 16px;
     font-weight: 500;
@@ -259,7 +253,7 @@ body {
 }
 
 .cart-p1:hover .info-cart {
-    opacity: 1; /* При наведении курсора делаем информацию видимой */
+    opacity: 1;
 }
 
 
@@ -272,27 +266,15 @@ body {
     color: #ECECEC;
     border-radius: 20px;
     margin: 50px 15px 15px 15px;
-    position: relative; /* Добавляем позиционирование */
+    position: relative;
 }
 
-.cart-p2:hover .info-cart {
-    opacity: 1; /* При наведении курсора делаем информацию видимой */
-}
-
-.cart-p3:hover .info-cart {
-    opacity: 1; /* При наведении курсора делаем информацию видимой */
-}
-
-.cart-p4:hover .info-cart {
-    opacity: 1; /* При наведении курсора делаем информацию видимой */
-}
-
-.cart-p5:hover .info-cart {
-    opacity: 1; /* При наведении курсора делаем информацию видимой */
-}
-
+.cart-p2:hover .info-cart,
+.cart-p3:hover .info-cart,
+.cart-p4:hover .info-cart,
+.cart-p5:hover .info-cart,
 .cart-p6:hover .info-cart {
-    opacity: 1; /* При наведении курсора делаем информацию видимой */
+    opacity: 1;/
 }
 
 .cart-p3 {
@@ -303,7 +285,8 @@ body {
     color: #ECECEC;
     border-radius: 20px;
     margin: 50px 15px 15px 15px;
-    position: relative; /* Добавляем позиционирование */
+    position: relative;
+    /* Добавляем позиционирование */
 }
 
 .cart-p4 {
@@ -314,7 +297,8 @@ body {
     color: #ECECEC;
     border-radius: 40px;
     margin: 15px 15px 15px 15px;
-    position: relative; /* Добавляем позиционирование */
+    position: relative;
+    /* Добавляем позиционирование */
 }
 
 .cart-p5 {
@@ -325,7 +309,8 @@ body {
     color: #ECECEC;
     border-radius: 40px;
     margin: 15px 15px 15px 15px;
-    position: relative; /* Добавляем позиционирование */
+    position: relative;
+    /* Добавляем позиционирование */
 }
 
 .cart-p6 {
@@ -336,7 +321,8 @@ body {
     color: #ECECEC;
     border-radius: 40px;
     margin: 15px 15px 15px 15px;
-    position: relative; /* Добавляем позиционирование */
+    position: relative;
+    /* Добавляем позиционирование */
 }
 
 
@@ -355,9 +341,9 @@ body {
 }
 
 .conditions-button {
-    
+
     text-decoration: none;
-    
+
     font-size: 16px;
     color: #ececec;
     background-color: #217A7B;
@@ -382,8 +368,10 @@ body {
 
 .deadlines {
     display: flex;
-    flex-direction: row; /* Изменение направления flex-контейнера */
-    align-items: center; /* Выравнивание по центру по вертикали */
+    flex-direction: row;
+    /* Изменение направления flex-контейнера */
+    align-items: center;
+    /* Выравнивание по центру по вертикали */
 
 }
 
@@ -412,7 +400,7 @@ body {
     height: 82px;
     margin-top: -37px;
     margin-right: 10px;
-/
+    /
 }
 
 
@@ -479,9 +467,12 @@ body {
 
 .process-h2 {
     border-bottom: 1px solid #217A7B;
-    padding-bottom: 8px; /* Добавлена линия после заголовка и отступ */
-    font-size: 14px;;
-    color: #393939;;
+    padding-bottom: 8px;
+    /* Добавлена линия после заголовка и отступ */
+    font-size: 14px;
+    ;
+    color: #393939;
+    ;
 }
 
 .process-ol ol {
@@ -501,7 +492,8 @@ body {
     padding-bottom: 6px;
     text-align: left;
     margin-bottom: 50px;
-    border-bottom: 1px solid #217A7B; /* Добавлена линия после каждого пункта */
+    border-bottom: 1px solid #217A7B;
+    /* Добавлена линия после каждого пункта */
 }
 
 .text-process {
@@ -534,7 +526,8 @@ body {
     align-items: center;
     padding: 50px 0;
 
-    justify-content: space-between;;
+    justify-content: space-between;
+    ;
 }
 
 
@@ -573,7 +566,8 @@ body {
     border-radius: 10px;
     height: 370px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Темный цвет с прозрачностью */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Темный цвет с прозрачностью */
 }
 
 
@@ -595,14 +589,14 @@ body {
 
 
 .kp-pravo {
-    padding: 34px 60px 50px;
+    padding: 34px 60px 0px;
 }
 
 
 
 
 .kp-alena {
-    background: url(../img/kp-alena.jpg) center center no-repeat;
+    background: url(../img/alenaa.jpg) center center no-repeat;
     background-size: cover;
     height: 667px;
     width: 588px;
@@ -613,16 +607,16 @@ body {
 }
 
 
-.form-container {
+.form {
     display: flex;
-    /*padding: 140px 0;*/
     justify-content: center;
 }
+
 
 .conditions-btn button {
     background: url(../img/kp-alena.jpg) center center no-repeat;
     background-size: cover;
-    width:  667px;
+    width: 667px;
     background: none;
     border: none;
 }
@@ -630,10 +624,10 @@ body {
 .form-button {
     background: url(../img/form.svg) center center no-repeat;
     background-size: cover;
-    width:  667px;
+    width: 100%;
 
     text-decoration: none;
-    
+
     font-size: 22px;
     color: #ececec;
     font-weight: 200;
@@ -696,8 +690,10 @@ body {
 
 .form-button {
     display: flex;
-    justify-content: center; /* или 'flex-start' если хотите их выровнять по левому краю */
-    align-items: center; /* выровнять элементы по вертикали */
+    justify-content: center;
+    /* или 'flex-start' если хотите их выровнять по левому краю */
+    align-items: center;
+    /* выровнять элементы по вертикали */
 }
 
 
@@ -768,7 +764,7 @@ body {
 
 .content-title-about {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 70px;
     margin-left: 60px;
     font-size: 36px;
     font-style: normal;
@@ -785,11 +781,11 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 155%;
-    margin-top: 150px;
+    margin-top: 280px;
     z-index: 2;
     padding: 20px 40px;
     border-radius: 20px;
-    background-color: rgba(245,245,245,0.8);
+    background-color: rgba(245, 245, 245, 0.8);
 }
 
 .about-textp1-span {
@@ -802,7 +798,7 @@ body {
 }
 
 .about-photo {
-    background: url(../img/jim-wood.jpg) no-repeat;
+    background: url(../img/jim.jpg) no-repeat;
     background-size: cover;
     width: 1085px;
     height: 713px;
@@ -821,16 +817,14 @@ body {
 .about-textp2 {
     padding: 30px;
     max-width: 540px;
-
-    margin-top: 400px;
+    margin-top: 520px;
     margin-left: -144px;
     background-color: rgba(33, 122, 123, 0.9);
     border-radius: 10px;
     position: relative;
     line-height: 155%;
     color: white;
-    z-index: 1; /* Второй блок текста будет отображаться поверх фотографии */
-    /* Добавьте свои предпочитаемые стили */
+    z-index: 1;
 }
 
 
@@ -858,7 +852,7 @@ footer {
     text-decoration: none;
 }
 
-.aderss p{
+.aderss p {
     color: #393939;
 
     font-family: Montserrat;
@@ -871,7 +865,8 @@ footer {
 }
 
 
-.footer-title, h3 {
+.footer-title,
+h3 {
     color: #000;
     margin: 0;
     text-align: left;
@@ -926,24 +921,24 @@ footer {
 
 /*галерея */
 
-.row > .column {
+.row>.column {
     padding: 0 8px;
-  }
-  
-  .row:after {
+}
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Create four equal columns that floats next to eachother */
-  .column {
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
     float: left;
     width: 25%;
-  }
-  
-  /* The Modal (background) */
-  .modal {
+}
+
+/* The Modal (background) */
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -954,30 +949,35 @@ footer {
     height: 100%;
     overflow: auto;
     background: radial-gradient(101.72% 100.68% at 50% 50%, #292525 0%, rgba(27, 26, 26, 0.4) 100%);
-  }
+}
 
-  .portfolio-img {
-    width: 400px; object-fit: cover;
-  }
-  .portfolio-img-big {
-    object-fit: cover; height: 830px; width: 1200px;
+.portfolio-img {
+    width: 400px;
+    object-fit: cover;
+}
+
+.portfolio-img-big {
+    object-fit: cover;
+    height: 830px;
+    width: 1200px;
 }
 
 .portfolio-img-min img {
     object-fit: cover;
-    height: 600px; width: 600px;
+    height: 600px;
+    width: 600px;
 }
-  
 
-  /* Modal Content */
-  .modal-content {
+
+/* Modal Content */
+.modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     max-width: 1200px;
     object-fit: cover;
-  }
+}
 
 
 .card-content img {
@@ -987,8 +987,8 @@ footer {
 
 
 
-  /* The Close Button */
-  .close {
+/* The Close Button */
+.close {
     color: white;
     position: absolute;
     top: 10px;
@@ -996,30 +996,30 @@ footer {
     font-size: 35px;
     font-weight: bold;
     display: flex;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* Hide the slides by default */
-  .mySlides {
-    width: 1492px;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    width: auto;
     display: none;
     flex-wrap: nowrap;
-    gap: 10px;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    height: 100%;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    height: 3890px;
     cursor: pointer;
     position: absolute;
-    top: 20%;
+    top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -1030,49 +1030,146 @@ footer {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
+}
 
-  .prev {
+.prev {
     left: 0;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* Caption text */
-  .caption-container {
+}
+
+/* Caption text */
+.caption-container {
     text-align: center;
     background-color: black;
     padding: 2px 16px;
     color: white;
-  }
-  
-  img.demo {
+}
+
+img.demo {
     opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
+}
+
+.active,
+.demo:hover {
     opacity: 1;
-  }
-  
-  img.hover-shadow {
+}
+
+img.hover-shadow {
     transition: 0.3s;
-  }
-  
-  .hover-shadow:hover {
+}
+
+.hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
+
+
+.form-input._error {
+    box-shadow: 0 0 15px red;
+}
+
+
+
+
+.header-nav {
+    padding: 20px 0 40px 0;
+    justify-content: center;
+    display: flex;
+    background-color: #FFFFFF;
+    max-width: 1350px;
+    margin: 0 auto;
+    align-items: center;
+    display: block;
+}
+
+.form-container {
+    display: flex;
+    /*padding: 140px 0;*/
+    justify-content: center;
+}
+
+
+form {
+    justify-content: center;
+    padding: 15px;
+    width: auto;
+    min-width: 500px;
+}
+
+form input {
+    width: 600px;
+    height: 68px;
+    border: 1px solid #217A7B;
+    border-radius: 40px;
+    margin: 19px auto;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+
+form textarea {
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+}
+
+form button {
+
+    cursor: pointer;
+
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+    color: #ECECEC;
+
+    border-radius: 40px;
+    border: 0;
+    background: #217A7B;
+    height: 69px;
+    width: 230px;
+
+    font-size: 16px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    /* или 'flex-start' если хотите их выровнять по левому краю */
+    align-items: center;
+    /* выровнять элементы по вертикали */
+}
+form input.error{
+  border-color:red;
+}
+
+#success-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 10px;
+  z-index: 9999;
+}
